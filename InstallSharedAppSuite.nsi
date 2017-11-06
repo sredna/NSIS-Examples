@@ -101,7 +101,9 @@ ${If} $SMDir != ""
 	RMDir "$SMPrograms\$SMDir"
 ${EndIf}
 
-Delete "$InstDir\MyApp.exe"
+Delete "$InstDir\App1.exe"
+Delete "$InstDir\App2.exe"
+Delete "$InstDir\App3.exe"
 Delete "$InstDir\uninstall.exe"
 RMDir "$InstDir"
 DeleteRegKey ${REGUINST}
