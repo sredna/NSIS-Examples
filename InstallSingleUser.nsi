@@ -67,7 +67,7 @@ File "/oname=$InstDir\MyApp.exe" "${NSISDIR}\Contrib\UIs\default.exe" ; Using de
 SectionEnd
  
 Section "Start menu shortcut"
-CreateShortcut /NoWorkingDir "$SMPrograms\${APPNAME}.lnk" '"$Instdir\MyApp.exe"'
+CreateShortcut /NoWorkingDir "$SMPrograms\${APPNAME}.lnk" "$Instdir\MyApp.exe"
 SectionEnd
 
 
